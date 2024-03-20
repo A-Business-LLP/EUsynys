@@ -26,6 +26,7 @@ class RegionTablesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Region
         fields = (
+            'id',
             'name', 
             'total_tables', 
             'total_responses', 
