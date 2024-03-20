@@ -13,8 +13,7 @@ schema_view = get_schema_view(
         description="API documentation"
     ),
     public=True,
-    permission_classes=(permissions.IsAdminUser,),
-    authentication_classes=(CookieJWTAuthentication,)
+    permission_classes=(permissions.AllowAny,),
 )
 
 urlpatterns = [
